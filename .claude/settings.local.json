@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:bootstrapmade.com)",
+      "Bash(start \"\" \"c:/Users/admin/Documents/Projects/Fengshui Master/index.html\")",
+      "Bash(git --version)",
+      "Bash(where git:*)",
+      "Bash(curl --version)"
+    ]
+  }
+}

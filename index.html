@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>风水文化 - 调和空间，改变生活</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- AOS Animate On Scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&family=Raleway:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== 顶部导航 ========== -->
+  <header id="header" class="header sticky-top">
+    <div class="container-fluid container-xl">
+      <nav class="navbar navbar-expand-lg">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <span class="logo-icon"><i class="bi bi-yin-yang"></i></span>
+          <span class="logo-text">风水<span class="accent">文化</span></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">首页</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">服务项目</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">案例展示</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">专家团队</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+          </ul>
+          <div class="header-cta ms-lg-4 d-flex align-items-center gap-3">
+            <span class="header-phone d-none d-xl-flex align-items-center gap-2">
+              <i class="bi bi-telephone-fill"></i> +1 (555) 234-6789
+            </span>
+            <a href="#contact" class="btn btn-primary">预约咨询</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== 首屏 ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 text-center">
+          <p class="hero-subtitle" data-aos="fade-down" data-aos-delay="100">欢迎来到风水文化</p>
+          <h1 data-aos="fade-up" data-aos-delay="200">调和您的空间，<br />改变您的生活</h1>
+          <p class="hero-desc" data-aos="fade-up" data-aos-delay="300">
+            古老智慧与现代生活的完美融合。我们通过风水之道，为您的居家与职场带来平衡、繁荣与正能量。
+          </p>
+          <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
+            <a href="#services" class="btn btn-primary btn-lg">探索服务</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">预约堪舆</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about"><i class="bi bi-chevron-double-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== 数据栏 ========== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="100">
+          <span class="stat-num">25+</span>
+          <span class="stat-label">年从业经验</span>
+        </div>
+        <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="200">
+          <span class="stat-num">1,800+</span>
+          <span class="stat-label">服务客户</span>
+        </div>
+        <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="300">
+          <span class="stat-num">15</span>
+          <span class="stat-label">专业顾问</span>
+        </div>
+        <div class="col-6 col-md-3 stat-item" data-aos="fade-up" data-aos-delay="400">
+          <span class="stat-num">40+</span>
+          <span class="stat-label">行业荣誉</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 关于我们 ========== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-img-wrap">
+            <img src="https://picsum.photos/seed/fengshui-about/700/480" alt="风水咨询" class="img-fluid rounded-3 main-img" />
+            <div class="about-img-badge">
+              <i class="bi bi-yin-yang"></i>
+              <span>创立于 1999 年</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="section-label">关于我们</div>
+          <h2 class="section-title">自 1999 年起，以古老智慧点亮现代空间</h2>
+          <p class="section-desc">
+            在风水文化，我们相信每个空间都蕴藏着能量——而这股能量深刻影响着您的生活。二十五年来，我们的认证堪舆师帮助了数千个家庭与企业，通过经过时间检验的风水原理，开启和谐、健康与丰盛之门。
+          </p>
+          <div class="about-features row g-3 mt-2">
+            <div class="col-6">
+              <div class="feature-item">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>权威认证堪舆师</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-item">
+                <i class="bi bi-clock-fill"></i>
+                <span>准时高效服务</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-item">
+                <i class="bi bi-people-fill"></i>
+                <span>专业精英团队</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="feature-item">
+                <i class="bi bi-award-fill"></i>
+                <span>屡获行业大奖</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-4">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 服务项目 ========== -->
+  <section id="services" class="services section bg-light">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">服务项目</div>
+        <h2 class="section-title">我们提供的服务</h2>
+        <p class="section-subtitle">全方位风水解决方案，量身定制，助力您的居家、办公与人生目标。</p>
+      </div>
+      <div class="row g-4 mt-3">
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-house-heart-fill"></i></div>
+            <h4>住宅风水</h4>
+            <p>通过专业的居家能量评估，将您的家园打造成平和、幸福与富足的生活圣地。</p>
+            <a href="#contact" class="service-link">了解详情 <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-building-fill"></i></div>
+            <h4>商业与办公风水</h4>
+            <p>优化工作空间的气场流动，提升工作效率，吸引客户，助力业务腾飞。</p>
+            <a href="#contact" class="service-link">了解详情 <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-compass-fill"></i></div>
+            <h4>八字命理</h4>
+            <p>通过生辰八字与中国命理学，揭示您的命运密码，指引事业与感情的方向。</p>
+            <a href="#contact" class="service-link">了解详情 <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-map-fill"></i></div>
+            <h4>择地选址</h4>
+            <p>运用传统形势派风水，为您的住宅或商业用地精准选择最佳地块与朝向。</p>
+            <a href="#contact" class="service-link">了解详情 <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-gem"></i></div>
+            <h4>空间净化与化煞</h4>
+            <p>消除空间负能量，布置风水化煞与旺运物件，引入正气，焕然一新。</p>
+            <a href="#contact" class="service-link">了解详情 <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <h4>风水文化课程</h4>
+            <p>参加我们专为初学者与爱好者设计的互动课程，系统学习风水基础知识。</p>
+            <a href="#contact" class="service-link">了解详情 <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 案例展示 ========== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">案例展示</div>
+        <h2 class="section-title">焕然一新的空间</h2>
+        <p class="section-subtitle">从温馨居所到繁忙办公室——见证风水如何改变生活。</p>
+      </div>
+
+      <!-- 筛选按钮 -->
+      <div class="portfolio-filter text-center mt-4" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="residential">住宅</button>
+        <button class="filter-btn" data-filter="commercial">商业</button>
+        <button class="filter-btn" data-filter="wellness">养生</button>
+      </div>
+
+      <!-- 案例网格 -->
+      <div class="row g-4 mt-3" id="portfolio-grid">
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="residential" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-card">
+            <img src="https://picsum.photos/seed/proj1/600/400" alt="夕阳别墅" class="img-fluid" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-tag">住宅</span>
+                <h5>夕阳别墅</h5>
+                <p>全屋风水堪察与化煞布局</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-card">
+            <img src="https://picsum.photos/seed/proj2/600/400" alt="都市商业中心" class="img-fluid" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-tag">商业</span>
+                <h5>都市商业中心</h5>
+                <p>办公室布局优化，旺财提效</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="wellness" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-card">
+            <img src="https://picsum.photos/seed/proj3/600/400" alt="和谐养生中心" class="img-fluid" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-tag">养生</span>
+                <h5>和谐养生中心</h5>
+                <p>能量平衡，打造整体疗愈环境</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="residential" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-card">
+            <img src="https://picsum.photos/seed/proj4/600/400" alt="湖景雅居" class="img-fluid" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-tag">住宅</span>
+                <h5>湖景雅居</h5>
+                <p>八卦方位勘测与五行平衡调整</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-card">
+            <img src="https://picsum.photos/seed/proj5/600/400" alt="中央购物广场" class="img-fluid" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-tag">商业</span>
+                <h5>中央购物广场</h5>
+                <p>零售动线优化与财位激活</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="wellness" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-card">
+            <img src="https://picsum.photos/seed/proj6/600/400" alt="静谧水疗度假村" class="img-fluid" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <span class="portfolio-tag">养生</span>
+                <h5>静谧水疗度假村</h5>
+                <p>阴阳调和与疗愈气脉设计</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 服务流程 ========== -->
+  <section class="process section bg-dark-custom">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label light">服务流程</div>
+        <h2 class="section-title light">我们如何工作</h2>
+        <p class="section-subtitle light">简单清晰的四步骤，引领您走向和谐美好的生活。</p>
+      </div>
+      <div class="row g-4 mt-3 justify-content-center">
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="process-card">
+            <div class="process-num">01</div>
+            <div class="process-icon"><i class="bi bi-chat-dots-fill"></i></div>
+            <h5>初步咨询</h5>
+            <p>倾听您的目标、困惑与期望，全面了解您的需求与现状。</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="process-card">
+            <div class="process-num">02</div>
+            <div class="process-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+            <h5>空间分析</h5>
+            <p>运用传统风水方法，分析平面图、朝向与五行元素能量分布。</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="process-card">
+            <div class="process-num">03</div>
+            <div class="process-icon"><i class="bi bi-tools"></i></div>
+            <h5>实施布局</h5>
+            <p>推荐并安置化煞旺运物件，调整室内格局，优化气场流动。</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="process-card">
+            <div class="process-num">04</div>
+            <div class="process-icon"><i class="bi bi-stars"></i></div>
+            <h5>跟进回访</h5>
+            <p>定期回访，确认正向改变已显现，并根据反馈作进一步优化。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 专家团队 ========== -->
+  <section id="team" class="team section bg-light">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">认识专家</div>
+        <h2 class="section-title">我们的团队</h2>
+        <p class="section-subtitle">经过认证的风水大师，数十年经验，为您的人生旅程保驾护航。</p>
+      </div>
+      <div class="row g-4 mt-3 justify-content-center">
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://picsum.photos/seed/team1/400/400" alt="陈伟大师" class="img-fluid" />
+              <div class="team-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>陈伟大师</h5>
+              <span>首席风水顾问</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://picsum.photos/seed/team2/400/400" alt="李美玲" class="img-fluid" />
+              <div class="team-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>李美玲</h5>
+              <span>八字命理分析师</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://picsum.photos/seed/team3/400/400" alt="黄大卫" class="img-fluid" />
+              <div class="team-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>黄大卫</h5>
+              <span>商业空间专家</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://picsum.photos/seed/team4/400/400" alt="陈思华" class="img-fluid" />
+              <div class="team-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5>陈思华</h5>
+              <span>室内能量顾问</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 客户评价 ========== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">客户评价</div>
+        <h2 class="section-title">客户怎么说</h2>
+      </div>
+      <div class="swiper testimonials-swiper mt-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">"陈大师为我们的家进行堪察后，家里的运势发生了翻天覆地的变化。我丈夫两个月内便获得晋升，整个家的氛围也变得更加温馨平和。"</p>
+              <div class="testimonial-author">
+                <img src="https://picsum.photos/seed/test1/100/100" alt="张明辉" />
+                <div>
+                  <strong>张明辉</strong>
+                  <span>业主，上海</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">"起初我半信半疑，但为餐厅做的商业风水审查彻底改变了局面。第一季度营业额增长了30%，完全物超所值！"</p>
+              <div class="testimonial-author">
+                <img src="https://picsum.photos/seed/test2/100/100" alt="林美华" />
+                <div>
+                  <strong>林美华</strong>
+                  <span>餐厅老板，北京</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">"与李美玲老师的八字批算令我大开眼界。她帮我发现了从未考虑过的事业方向，如今我在正确的行业乘风破浪，感觉如有神助。"</p>
+              <div class="testimonial-author">
+                <img src="https://picsum.photos/seed/test3/100/100" alt="王建国" />
+                <div>
+                  <strong>王建国</strong>
+                  <span>创业者，广州</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">"风水文化介入之前，我们的养生工作室一直举步维艰。如今空间充满了欢迎的气场，客人络绎不绝，口口相传。真正的蜕变之道！"</p>
+              <div class="testimonial-author">
+                <img src="https://picsum.photos/seed/test4/100/100" alt="刘晓燕" />
+                <div>
+                  <strong>刘晓燕</strong>
+                  <span>养生馆主，深圳</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 常见问题 ========== -->
+  <section class="faq section bg-light">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="section-label">常见问题</div>
+          <h2 class="section-title">常见问题解答</h2>
+          <p>对风水有疑问？我们已整理出最常见的问题并一一作答。如需进一步了解，欢迎随时联系我们。</p>
+          <a href="#contact" class="btn btn-primary mt-3">立即咨询</a>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  你们提供哪些类型的空间咨询？
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  我们为各类空间提供咨询服务，包括住宅、公寓、商业办公室、零售门店、餐厅、养生中心及土地选址等。我们的方法灵活适用于任何环境。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  一次风水咨询需要多长时间？
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  住宅咨询通常需要现场勘察 2 至 4 小时，随后出具详细书面报告。商业咨询视空间规模与复杂程度，可能需要 4 至 8 小时。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  如何获取免费报价？
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  只需填写本页联系表，或致电 +1 (555) 234-6789。我们将安排一次约 15 分钟的免费电话沟通，了解您的需求并提供无义务报价。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  你们的顾问是否持有认证资质？
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  是的。我们所有顾问均持有国际知名风水学院颁发的认证资质，拥有不少于 10 年的实践经验，秉持传统经典与循证相结合的研究方法。
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                  是否提供线上或远程咨询服务？
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  当然！我们通过视频通话提供远程咨询，只需提供平面图、罗盘读数及现场照片即可。远程咨询同样高效，面向全球客户开放。
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 联系我们 ========== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <div class="section-label">联系我们</div>
+        <h2 class="section-title">与我们取得联系</h2>
+        <p class="section-subtitle">准备好改变您的空间了吗？请联系我们，我们将在 24 小时内回复。</p>
+      </div>
+      <div class="row g-5 mt-3">
+
+        <!-- 联系信息 -->
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h6>办公地址</h6>
+                <p>742 和谐路，8 号套房<br />斯普林菲尔德，IL 62701</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <h6>联系电话</h6>
+                <p>+1 (555) 234-6789<br />+1 (555) 987-6543</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h6>电子邮件</h6>
+                <p>info@fengshuimaster.com<br />consult@fengshuimaster.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <h6>服务时间</h6>
+                <p>周一至周五：上午 9:00 – 下午 6:00<br />周六：上午 10:00 – 下午 4:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 联系表单 -->
+        <div class="col-lg-8" data-aos="fade-left">
+          <form class="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="您的姓名" required />
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="您的电子邮箱" required />
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="联系电话" />
+              </div>
+              <div class="col-md-6">
+                <select class="form-select">
+                  <option value="" disabled selected>选择服务项目</option>
+                  <option>住宅风水</option>
+                  <option>商业与办公风水</option>
+                  <option>八字命理</option>
+                  <option>择地选址</option>
+                  <option>空间净化与化煞</option>
+                  <option>风水文化课程</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="5" placeholder="您的留言内容"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg">发送消息</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-lg-4">
+          <a class="footer-brand" href="#">
+            <span class="logo-icon"><i class="bi bi-yin-yang"></i></span>
+            <span class="logo-text">风水<span class="accent">文化</span></span>
+          </a>
+          <p class="mt-3">将古老智慧融入现代生活。我们调和空间，为您吸引丰盛、健康与幸福。</p>
+          <div class="footer-social mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">快速导航</h6>
+          <ul class="footer-links">
+            <li><a href="#hero">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#services">服务项目</a></li>
+            <li><a href="#projects">案例展示</a></li>
+            <li><a href="#team">专家团队</a></li>
+            <li><a href="#contact">联系我们</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h6 class="footer-heading">服务项目</h6>
+          <ul class="footer-links">
+            <li><a href="#services">住宅风水</a></li>
+            <li><a href="#services">商业与办公风水</a></li>
+            <li><a href="#services">八字命理</a></li>
+            <li><a href="#services">择地选址</a></li>
+            <li><a href="#services">空间净化与化煞</a></li>
+            <li><a href="#services">风水文化课程</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="footer-heading">联系信息</h6>
+          <ul class="footer-contact-list">
+            <li><i class="bi bi-geo-alt-fill"></i> 742 和谐路，斯普林菲尔德，IL</li>
+            <li><i class="bi bi-telephone-fill"></i> +1 (555) 234-6789</li>
+            <li><i class="bi bi-envelope-fill"></i> info@fengshuimaster.com</li>
+            <li><i class="bi bi-clock-fill"></i> 周一至周五：9:00 – 18:00</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 <strong>风水文化</strong>. 版权所有。</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 返回顶部 -->
+  <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

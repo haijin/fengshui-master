@@ -83,21 +83,56 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ---------- Contact Form Submit ---------- */
+  const RECAPTCHA_SITE_KEY = '6Lf0GYssAAAAANXgHdRXo8SATOZiRsbgR4sP4ckW';
+
   const contactForm = document.querySelector('.contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', e => {
+    contactForm.addEventListener('submit', async e => {
       e.preventDefault();
-      // Simple success feedback
       const btn = contactForm.querySelector('button[type="submit"]');
-      btn.textContent = '发送成功！';
+      const originalText = btn.textContent;
       btn.disabled = true;
-      btn.style.background = '#28a745';
-      setTimeout(() => {
-        btn.textContent = 'Send Message';
-        btn.disabled = false;
-        btn.style.background = '';
-        contactForm.reset();
-      }, 3000);
+      btn.textContent = '验证中…';
+
+      try {
+        const recaptchaToken = await grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'contact' });
+
+        btn.textContent = '发送中…';
+
+        const data = {
+          name:            contactForm.querySelector('[name="name"]').value.trim(),
+          email:           contactForm.querySelector('[name="email"]').value.trim(),
+          phone:           contactForm.querySelector('[name="phone"]').value.trim(),
+          service:         contactForm.querySelector('[name="service"]').value,
+          message:         contactForm.querySelector('[name="message"]').value.trim(),
+          recaptcha_token: recaptchaToken,
+        };
+
+        const res = await fetch('/api/submit-contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error(await res.text());
+
+        btn.textContent = '发送成功！';
+        btn.style.background = '#28a745';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          btn.style.background = '';
+          contactForm.reset();
+        }, 3000);
+      } catch (err) {
+        console.error('Contact form error:', err);
+        btn.textContent = '发送失败，请重试';
+        btn.style.background = '#dc3545';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.disabled = false;
+          btn.style.background = '';
+        }, 3000);
+      }
     });
   }
 

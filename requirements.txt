@@ -1,0 +1,2 @@
+# Python serverless function uses only built-in libraries (urllib, json, os)
+# Node.js local dev server dependencies are in package.json

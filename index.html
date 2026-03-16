@@ -677,16 +677,16 @@
           <form class="contact-form">
             <div class="row g-3">
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="您的姓名" required />
+                <input type="text" name="name" class="form-control" placeholder="您的姓名" required />
               </div>
               <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="您的电子邮箱" required />
+                <input type="email" name="email" class="form-control" placeholder="您的电子邮箱" required />
               </div>
               <div class="col-md-6">
-                <input type="tel" class="form-control" placeholder="联系电话" />
+                <input type="tel" name="phone" class="form-control" placeholder="联系电话" />
               </div>
               <div class="col-md-6">
-                <select class="form-select">
+                <select name="service" class="form-select">
                   <option value="" disabled selected>选择服务项目</option>
                   <option>住宅风水</option>
                   <option>商业与办公风水</option>
@@ -697,7 +697,7 @@
                 </select>
               </div>
               <div class="col-12">
-                <textarea class="form-control" rows="5" placeholder="您的留言内容"></textarea>
+                <textarea name="message" class="form-control" rows="5" placeholder="您的留言内容"></textarea>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-primary btn-lg">发送消息</button>
@@ -781,6 +781,9 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <!-- Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Google reCAPTCHA v3 -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lf0GYssAAAAANXgHdRXo8SATOZiRsbgR4sP4ckW"></script>
 
   <script src="assets/js/main.js"></script>
 </body>

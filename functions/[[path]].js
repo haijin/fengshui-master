@@ -5,7 +5,7 @@
  * is forwarded to ORIGIN with the original method, headers, and body.
  */
 
-const ORIGIN = "http://104.43.94.18:3009";
+const ORIGIN = "http://origin.fengshuimaster.com:3009";
 
 export async function onRequest({ request }) {
   const url = new URL(request.url);

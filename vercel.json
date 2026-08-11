@@ -5,10 +5,6 @@
       "destination": "http://104.43.94.18:3009/"
     },
     {
-      "source": "/filedrop/:path*",
-      "destination": "http://104.43.94.18:3030/filedrop/:path*"
-    },
-    {
       "source": "/:path*",
       "destination": "http://104.43.94.18:3009/:path*"
     }
